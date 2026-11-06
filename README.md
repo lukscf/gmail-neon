@@ -8,6 +8,24 @@
 
 > Projeto independente, sem relação com o Google. "Gmail" é marca do Google LLC.
 
+## Como fica
+
+![Caixa de entrada com o tema ciano e o fundo animado de grade synthwave; a linha sob o mouse fica em destaque](docs/screenshots/inbox-cyan-synthwave.webp)
+
+| Roxo com fundo aurora: o menu lateral em cartões 3D | Rosa com fundo de estrelas |
+|---|---|
+| ![Tema roxo com o item "Starred" do menu lateral em relevo sob o mouse](docs/screenshots/inbox-purple-menu-3d.webp) | ![Tema rosa com fundo de estrelas cintilantes](docs/screenshots/inbox-pink-stars.webp) |
+
+**Conversa aberta:** a caixa principal inclina de leve e brilha seguindo o mouse.
+
+![Conversa aberta no tema roxo, com os botões Responder e Encaminhar em pílulas neon](docs/screenshots/conversation-3d.webp)
+
+**Rodapé do compose:** ícones brancos animados e o botão Enviar em degradê neon.
+
+![Rodapé da janela de escrever com o botão Enviar em degradê e o ícone de anexo em destaque sob o mouse](docs/screenshots/compose-footer.webp)
+
+<sub>Nas imagens, remetentes, assuntos e conteúdo aparecem desfocados para preservar a privacidade. O "Modo discreto" da extensão faz um efeito parecido.</sub>
+
 ## O que ela faz
 
 ### Visual
