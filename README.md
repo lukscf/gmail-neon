@@ -117,4 +117,4 @@ Os efeitos usam um único `pointermove` passivo e `requestAnimationFrame`, só c
 
 ## Histórico
 
-Veja o [CHANGELOG.md](CHANGELOG.md).
+Veja o [CHANGELOG.md](CHANGELOG.md). Política de privacidade: [PRIVACY.md](PRIVACY.md).
