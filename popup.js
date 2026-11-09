@@ -2,14 +2,21 @@ const DEFAULTS = {
   theme: true, tilt: true, composeFx: true, privacy: false,
   color: "purple", background: "aurora"
 };
-const COLORS = { purple: "#bd77ff", blue: "#5c9dff", pink: "#ff74bb", cyan: "#4fe0db", green: "#75df95" };
+const COLORS = { purple: "#bd77ff", blue: "#5c9dff", pink: "#ff74bb", cyan: "#4fe0db", green: "#75df95", bullet: "#C2F141" };
+// Tema Bullet: tons neutros do Bullet Identity Source em vez de um matiz.
+const BULLET_LOOK = { "--bg": "#070707", "--panel": "#131313", "--line": "#333333", "--text": "#FFFFFF", "--muted": "#A3A3A3", "--top": "#1A1A1A" };
 // O popup inteiro acompanha a cor: fundo, painéis, linhas e texto secundário têm o mesmo tom.
 // O roxo mantém os tons originais.
 const HUES = { blue: 218, pink: 330, cyan: 178, green: 140 };
 function tint(color) {
+  document.documentElement.dataset.look = color;
   const root = document.documentElement.style;
   const h = HUES[color];
   for (const p of ["--bg", "--panel", "--line", "--text", "--muted", "--top"]) root.removeProperty(p);
+  if (color === "bullet") {
+    for (const [k, v] of Object.entries(BULLET_LOOK)) root.setProperty(k, v);
+    return;
+  }
   if (h === undefined) return;
   root.setProperty("--bg", `hsl(${h} 50% 4%)`);
   root.setProperty("--panel", `hsl(${h} 42% 10%)`);
@@ -53,6 +60,13 @@ $("#background").addEventListener("change", (event) => {
 document.querySelectorAll(".colors button").forEach((button) => button.addEventListener("click", () => {
   const color = button.dataset.color;
   showColor(color);
+  // Escolher Bullet liga também o fundo de balas e cripto
+  if (color === "bullet") {
+    chrome.storage.local.set({ color, background: "bullet" });
+    $("#background").value = "bullet";
+    status("Tema Bullet aplicado.");
+    return;
+  }
   chrome.storage.local.set({ color });
   status("Cor atualizada.");
 }));

@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## 1.4.0
+
+- **Tema Bullet**: paleta, tipografia e movimento do Bullet Identity Source. Fundo quase preto, superfícies em degraus de cinza, texto branco e off-white, Open Sans e acento lime só em detalhe (foco, contadores, fio da pasta ativa). Escrever e Enviar viram pílulas claras com texto preto. Escolher a cor Bullet no popup liga junto o fundo novo.
+- **Fundo "Bullet: balas e cripto"**: balas com rastro cruzando a tela, moedas cripto girando (₿, Ξ, ₮, $, ◎, Ł) e uma linha de preço discreta, sobre textura de ruído. Canvas leve, pausa com a aba escondida e respeita "reduzir movimento".
+
 ## 1.3.7
 
 - A cor escolhida no popup agora tinge o Gmail inteiro: fundo, painéis, bordas e texto secundário ficam no tom da cor (azul, rosa, ciano ou verde). Antes só os detalhes mudavam e o fundo continuava roxo escuro. O roxo segue igual.

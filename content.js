@@ -6,8 +6,8 @@
     theme: true, tilt: true, composeFx: true, privacy: false,
     color: "purple", background: "aurora"
   };
-  const COLORS = new Set(["purple", "blue", "pink", "cyan", "green"]);
-  const BACKGROUNDS = new Set(["aurora", "stars", "matrix", "synthwave", "bokeh", "warp", "rain", "fireflies", "orbit", "none"]);
+  const COLORS = new Set(["purple", "blue", "pink", "cyan", "green", "bullet"]);
+  const BACKGROUNDS = new Set(["aurora", "stars", "matrix", "synthwave", "bokeh", "warp", "rain", "fireflies", "orbit", "bullet", "none"]);
   const settings = { ...DEFAULTS };
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   let fx;
@@ -49,6 +49,8 @@
     body.classList.toggle("gmn-privacy", !!settings.privacy);
     body.dataset.gmnColor = COLORS.has(settings.color) ? settings.color : "purple";
     body.dataset.gmnBg = settings.theme && BACKGROUNDS.has(settings.background) ? settings.background : "none";
+    // fundo Bullet: o bullet-fx.js desenha num canvas dentro de #gmn-fx
+    document.documentElement.dataset.bulletFx = body.dataset.gmnBg === "bullet" ? "#gmn-fx" : "off";
     if (!settings.tilt) resetTilt();
     syncPanel();
   }
