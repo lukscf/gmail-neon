@@ -1,5 +1,5 @@
 /* GM Neon 1.1 — menus sólidos, conversa legível e botões no visual do mockup */
-body.gmn-theme{--gmn-panel2:#20142f;--gmn-soft:color-mix(in srgb,var(--gmn-accent) 18%,transparent);--gmn-soft2:color-mix(in srgb,var(--gmn-accent) 30%,transparent)}
+body.gmn-theme{--gmn-soft:color-mix(in srgb,var(--gmn-accent) 18%,transparent);--gmn-soft2:color-mix(in srgb,var(--gmn-accent) 30%,transparent)}
 
 /* ---------- 1. Menus e pop-ups: fundo sólido, nunca transparente ---------- */
 body.gmn-theme [role=menu],
@@ -176,9 +176,9 @@ body.gmn-compose-on .gmn-composer .wG:nth-of-type(8){animation-delay:.28s}
 body.gmn-compose-on .gmn-composer :is(.Xv,.oh){animation-delay:.32s}
 @keyframes gmnIconIn{from{opacity:0;transform:translateY(14px) scale(.4) rotate(-20deg)}to{opacity:.82;transform:none}}
 /* Enviar + seta: gradiente neon, texto branco, brilho que passa no hover */
-body.gmn-theme :is(.btC,.gmn-composer) .T-I.aoO,body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG{background:linear-gradient(120deg,var(--gmn-accent),color-mix(in srgb,var(--gmn-accent) 55%,#5b2bd6))!important;color:#fff!important;border:0!important;font-weight:700!important;letter-spacing:.02em;text-shadow:0 1px 2px #0006;box-shadow:0 0 18px var(--gmn-glow),inset 0 1px 0 #fff6!important;position:relative;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s,filter .2s!important}
+body.gmn-theme :is(.btC,.gmn-composer) .T-I.aoO,body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG{background:linear-gradient(120deg,var(--gmn-accent),color-mix(in srgb,var(--gmn-accent) 60%,#000))!important;color:#fff!important;border:0!important;font-weight:700!important;letter-spacing:.02em;text-shadow:0 1px 2px #0006;box-shadow:0 0 18px var(--gmn-glow),inset 0 1px 0 #fff6!important;position:relative;overflow:hidden;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s,filter .2s!important}
 body.gmn-theme :is(.btC,.gmn-composer) .T-I.aoO{border-radius:12px 0 0 12px!important;padding-right:18px!important}
-body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG{border-radius:0 12px 12px 0!important;border-left:1px solid #ffffff55!important;background:linear-gradient(120deg,color-mix(in srgb,var(--gmn-accent) 70%,#5b2bd6),color-mix(in srgb,var(--gmn-accent) 45%,#3d1aa8))!important}
+body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG{border-radius:0 12px 12px 0!important;border-left:1px solid #ffffff55!important;background:linear-gradient(120deg,color-mix(in srgb,var(--gmn-accent) 72%,#000),color-mix(in srgb,var(--gmn-accent) 45%,#000))!important}
 body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG .G-asx{filter:brightness(0) invert(1)!important;transition:transform .25s}
 body.gmn-theme :is(.btC,.gmn-composer) .T-I.hG:hover .G-asx{transform:translateY(2px)}
 body.gmn-theme :is(.btC,.gmn-composer) .T-I.aoO::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,#ffffff70 48%,transparent 66%);transform:translateX(-120%);pointer-events:none}

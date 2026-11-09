@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## 1.3.7
+
+- A cor escolhida no popup agora tinge o Gmail inteiro: fundo, painéis, bordas e texto secundário ficam no tom da cor (azul, rosa, ciano ou verde). Antes só os detalhes mudavam e o fundo continuava roxo escuro. O roxo segue igual.
+- O botão Enviar e o popup também acompanham a cor, sem o roxo fixo de antes.
+
 ## 1.3.6
 
 - Com o mouse no menu da esquerda (ou em qualquer ponto fora da caixa da conversa), a caixa continua seguindo o cursor. O brilho agora encosta na borda mais próxima e acompanha o movimento, em vez de sair da caixa e sumir. O evento de mouse é ouvido na fase de captura, então nenhum elemento do Gmail o bloqueia.

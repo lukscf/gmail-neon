@@ -3,6 +3,21 @@ const DEFAULTS = {
   color: "purple", background: "aurora"
 };
 const COLORS = { purple: "#bd77ff", blue: "#5c9dff", pink: "#ff74bb", cyan: "#4fe0db", green: "#75df95" };
+// O popup inteiro acompanha a cor: fundo, painéis, linhas e texto secundário têm o mesmo tom.
+// O roxo mantém os tons originais.
+const HUES = { blue: 218, pink: 330, cyan: 178, green: 140 };
+function tint(color) {
+  const root = document.documentElement.style;
+  const h = HUES[color];
+  for (const p of ["--bg", "--panel", "--line", "--text", "--muted", "--top"]) root.removeProperty(p);
+  if (h === undefined) return;
+  root.setProperty("--bg", `hsl(${h} 50% 4%)`);
+  root.setProperty("--panel", `hsl(${h} 42% 10%)`);
+  root.setProperty("--line", `hsl(${h} 30% 24%)`);
+  root.setProperty("--text", `hsl(${h} 100% 96%)`);
+  root.setProperty("--muted", `hsl(${h} 22% 70%)`);
+  root.setProperty("--top", `hsl(${h} 40% 20%)`);
+}
 const $ = (selector) => document.querySelector(selector);
 
 function status(message, error = false) {
@@ -13,6 +28,7 @@ function status(message, error = false) {
 
 function showColor(color) {
   document.documentElement.style.setProperty("--accent", COLORS[color] || COLORS.purple);
+  tint(color);
   document.querySelectorAll(".colors button").forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.color === color));
   });

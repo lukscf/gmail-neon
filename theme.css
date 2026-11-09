@@ -1,8 +1,8 @@
-body.gmn-theme{--gmn-bg:#100b1a;--gmn-panel:#1a1029;--gmn-raised:#251736;--gmn-line:#473159;--gmn-text:#f2eaff;--gmn-muted:#bdafce;--gmn-accent:#bd77ff;--gmn-glow:#bd77ff66;background:var(--gmn-bg)!important;color:var(--gmn-text)!important}
-body.gmn-theme[data-gmn-color=blue]{--gmn-accent:#5c9dff;--gmn-glow:#5c9dff66}
-body.gmn-theme[data-gmn-color=pink]{--gmn-accent:#ff74bb;--gmn-glow:#ff74bb66}
-body.gmn-theme[data-gmn-color=cyan]{--gmn-accent:#4fe0db;--gmn-glow:#4fe0db66}
-body.gmn-theme[data-gmn-color=green]{--gmn-accent:#75df95;--gmn-glow:#75df9566}
+body.gmn-theme{--gmn-bg:#100b1a;--gmn-panel:#1a1029;--gmn-raised:#251736;--gmn-line:#473159;--gmn-text:#f2eaff;--gmn-muted:#bdafce;--gmn-panel2:#20142f;--gmn-accent:#bd77ff;--gmn-glow:#bd77ff66;background:var(--gmn-bg)!important;color:var(--gmn-text)!important}
+body.gmn-theme[data-gmn-color=blue]{--gmn-accent:#5c9dff;--gmn-glow:#5c9dff66;--gmn-bg:#090f18;--gmn-panel:#0f1827;--gmn-raised:#182337;--gmn-line:#303f5a;--gmn-text:#ebf2ff;--gmn-muted:#b4becf;--gmn-panel2:#141e2e}
+body.gmn-theme[data-gmn-color=pink]{--gmn-accent:#ff74bb;--gmn-glow:#ff74bb66;--gmn-bg:#180911;--gmn-panel:#270f1b;--gmn-raised:#371828;--gmn-line:#5a3045;--gmn-text:#ffebf5;--gmn-muted:#cfb4c2;--gmn-panel2:#2e1421}
+body.gmn-theme[data-gmn-color=cyan]{--gmn-accent:#4fe0db;--gmn-glow:#4fe0db66;--gmn-bg:#091818;--gmn-panel:#0f2726;--gmn-raised:#183736;--gmn-line:#305a58;--gmn-text:#ebfffe;--gmn-muted:#b4cfce;--gmn-panel2:#142e2e}
+body.gmn-theme[data-gmn-color=green]{--gmn-accent:#75df95;--gmn-glow:#75df9566;--gmn-bg:#09180e;--gmn-panel:#0f2717;--gmn-raised:#183722;--gmn-line:#305a3e;--gmn-text:#ebfff1;--gmn-muted:#b4cfbd;--gmn-panel2:#142e1d}
 body.gmn-theme #gb,body.gmn-theme .aeF,body.gmn-theme .nH,body.gmn-theme .bkK,body.gmn-theme .bkL{background-color:var(--gmn-bg)!important;color:var(--gmn-text)!important}
 body.gmn-theme [role=main],body.gmn-theme [role=navigation]{background-color:transparent!important;color:var(--gmn-text)!important}
 body.gmn-theme .G-atb,body.gmn-theme .bq9,body.gmn-theme .aKh,body.gmn-theme .aAy,body.gmn-theme [role=toolbar]{background-color:var(--gmn-panel)!important;color:var(--gmn-text)!important;border-color:var(--gmn-line)!important}
